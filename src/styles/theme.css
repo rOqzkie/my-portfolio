@@ -3,118 +3,118 @@
 :root {
   --font-size: 16px;
   
-  /* Professional Blue Color Palette - Light Mode */
-  --background: #F8FAFC;
-  --foreground: #0F172A;
+  /* Blue-Green Color Palette - Light Mode */
+  --background: #F0FDFA;
+  --foreground: #0C1E1A;
   
   --card: #FFFFFF;
-  --card-foreground: #1E293B;
+  --card-foreground: #134E4A;
   
   --popover: #FFFFFF;
-  --popover-foreground: #0F172A;
+  --popover-foreground: #0C1E1A;
   
-  /* Primary: Sophisticated Royal Blue */
-  --primary: #2563EB;
+  /* Primary: Deep Teal Blue */
+  --primary: #0D9488;
   --primary-foreground: #FFFFFF;
   
-  /* Secondary: Soft Sky Blue */
-  --secondary: #E0F2FE;
-  --secondary-foreground: #0C4A6E;
+  /* Secondary: Soft Mint */
+  --secondary: #CCFBF1;
+  --secondary-foreground: #115E59;
   
-  /* Muted: Soft Blue-Gray */
-  --muted: #F1F5F9;
-  --muted-foreground: #64748B;
+  /* Muted: Cool Blue-Green Gray */
+  --muted: #F0FDFA;
+  --muted-foreground: #5B7B78;
   
-  /* Accent: Vibrant Cyan Blue */
-  --accent: #DBEAFE;
-  --accent-foreground: #1E40AF;
+  /* Accent: Light Teal */
+  --accent: #D5F5F0;
+  --accent-foreground: #0F766E;
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   
-  --border: rgba(148, 163, 184, 0.2);
+  --border: rgba(94, 160, 150, 0.2);
   --input: transparent;
-  --input-background: #F8FAFC;
-  --switch-background: #CBD5E1;
+  --input-background: #F0FDFA;
+  --switch-background: #A7D8D0;
   
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   
-  --ring: #2563EB;
+  --ring: #0D9488;
   
-  /* Chart Colors - Blue Spectrum */
-  --chart-1: #3B82F6;
-  --chart-2: #06B6D4;
-  --chart-3: #8B5CF6;
-  --chart-4: #0EA5E9;
-  --chart-5: #6366F1;
+  /* Chart Colors - Blue-Green Spectrum */
+  --chart-1: #0D9488;
+  --chart-2: #0891B2;
+  --chart-3: #2DD4BF;
+  --chart-4: #06B6D4;
+  --chart-5: #14B8A6;
   
   --radius: 0.625rem;
   
   /* Sidebar Colors */
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #0F172A;
-  --sidebar-primary: #2563EB;
+  --sidebar-foreground: #0C1E1A;
+  --sidebar-primary: #0D9488;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #F1F5F9;
-  --sidebar-accent-foreground: #1E293B;
-  --sidebar-border: #E2E8F0;
-  --sidebar-ring: #2563EB;
+  --sidebar-accent: #F0FDFA;
+  --sidebar-accent-foreground: #134E4A;
+  --sidebar-border: #D1E8E4;
+  --sidebar-ring: #0D9488;
 }
 
 .dark {
-  /* Professional Blue Color Palette - Dark Mode */
-  --background: #0F172A;
-  --foreground: #F1F5F9;
+  /* Blue-Green Color Palette - Dark Mode */
+  --background: #0A1A1F;
+  --foreground: #E2F1EE;
   
-  --card: #1E293B;
-  --card-foreground: #F1F5F9;
+  --card: #112B2E;
+  --card-foreground: #E2F1EE;
   
-  --popover: #1E293B;
-  --popover-foreground: #F1F5F9;
+  --popover: #112B2E;
+  --popover-foreground: #E2F1EE;
   
-  /* Primary: Bright Sky Blue (easy on eyes in dark mode) */
-  --primary: #38BDF8;
-  --primary-foreground: #0F172A;
+  /* Primary: Bright Teal (easy on eyes in dark mode) */
+  --primary: #2DD4BF;
+  --primary-foreground: #042F2E;
   
-  /* Secondary: Deep Blue */
-  --secondary: #1E3A5F;
-  --secondary-foreground: #E0F2FE;
+  /* Secondary: Deep Teal */
+  --secondary: #134E4A;
+  --secondary-foreground: #CCFBF1;
   
-  /* Muted: Slate Blue */
-  --muted: #334155;
-  --muted-foreground: #94A3B8;
+  /* Muted: Dark Teal-Slate */
+  --muted: #1A3A3E;
+  --muted-foreground: #9BBDB8;
   
-  /* Accent: Soft Cyan */
-  --accent: #164E63;
-  --accent-foreground: #7DD3FC;
+  /* Accent: Deep Cyan */
+  --accent: #164E4A;
+  --accent-foreground: #5EEAD4;
   
   --destructive: #F87171;
-  --destructive-foreground: #0F172A;
+  --destructive-foreground: #0A1A1F;
   
-  --border: rgba(148, 163, 184, 0.15);
-  --input: #334155;
-  --ring: #38BDF8;
+  --border: rgba(94, 234, 212, 0.12);
+  --input: #1A3A3E;
+  --ring: #2DD4BF;
   
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   
-  /* Chart Colors - Blue Spectrum for Dark Mode */
-  --chart-1: #60A5FA;
+  /* Chart Colors - Blue-Green Spectrum for Dark Mode */
+  --chart-1: #5EEAD4;
   --chart-2: #22D3EE;
-  --chart-3: #A78BFA;
-  --chart-4: #38BDF8;
-  --chart-5: #818CF8;
+  --chart-3: #67E8F9;
+  --chart-4: #2DD4BF;
+  --chart-5: #99F6E4;
   
   /* Sidebar Colors for Dark Mode */
-  --sidebar: #1E293B;
-  --sidebar-foreground: #F1F5F9;
-  --sidebar-primary: #38BDF8;
-  --sidebar-primary-foreground: #0F172A;
-  --sidebar-accent: #334155;
-  --sidebar-accent-foreground: #E0F2FE;
-  --sidebar-border: #334155;
-  --sidebar-ring: #38BDF8;
+  --sidebar: #112B2E;
+  --sidebar-foreground: #E2F1EE;
+  --sidebar-primary: #2DD4BF;
+  --sidebar-primary-foreground: #042F2E;
+  --sidebar-accent: #1A3A3E;
+  --sidebar-accent-foreground: #CCFBF1;
+  --sidebar-border: #1A3A3E;
+  --sidebar-ring: #2DD4BF;
 }
 
 @theme inline {
@@ -165,6 +165,13 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230d9488' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9H6v9h9zm-10 0v-9H1v9h4zM95 86v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 76v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 66v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 56v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 46v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 36v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 26v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 16V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232dd4bf' fill-opacity='0.04'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9H6v9h9zm-10 0v-9H1v9h4zM95 86v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 76v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 66v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 56v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 46v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 36v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 26v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zM95 16V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9zm-10 0V7h-9v9h9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
   }
 
   /**
@@ -174,47 +181,60 @@
 
   html {
     font-size: var(--font-size);
+    scroll-behavior: smooth;
   }
 
   h1 {
     font-size: var(--text-2xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
   }
 
   h2 {
     font-size: var(--text-xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
   }
 
   h3 {
     font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.015em;
   }
 
   h4 {
     font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    line-height: 1.7;
   }
 
   label {
     font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
+    font-weight: 500;
     line-height: 1.5;
   }
 
   button {
     font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
+    font-weight: 500;
     line-height: 1.5;
   }
 
-  input {
+  input, textarea {
     font-size: var(--text-base);
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
+  }
+
+  ::selection {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
   }
 }

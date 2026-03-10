@@ -12,7 +12,7 @@ import { Analytics } from './components/Analytics';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground antialiased">
       <Analytics />
       <Navbar />
       <main>

@@ -49,7 +49,7 @@ export function Clients() {
   ];
 
   return (
-    <section id="clients" className="py-20 sm:py-32 bg-muted/30 relative overflow-hidden">
+    <section id="clients" className="py-16 sm:py-24 lg:py-32 bg-muted/30 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
       
@@ -61,14 +61,14 @@ export function Clients() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Client Collaboration</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight">Client Collaboration</h2>
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Trusted by organizations worldwide for delivering exceptional solutions
           </p>
         </motion.div>
 
         {/* Highlights */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
           {highlights.map((highlight, index) => (
             <motion.div
               key={highlight.title}
@@ -78,7 +78,7 @@ export function Clients() {
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -4 }}
             >
-              <Card className="text-center p-8 rounded-2xl border-2 hover:shadow-xl hover:border-primary/50 transition-all">
+              <Card className="text-center p-5 sm:p-6 lg:p-8 rounded-2xl border border-border/60 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
                 <CardContent className="p-0 space-y-4">
                   <motion.div 
                     className="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center"
@@ -97,8 +97,8 @@ export function Clients() {
 
         {/* Testimonials */}
         <div className="space-y-4">
-          <h3 className="text-2xl font-bold text-center mb-8">Client Testimonials</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 tracking-tight">Client Testimonials</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.name}
@@ -109,7 +109,7 @@ export function Clients() {
                 whileHover={{ y: -8 }}
                 className="group"
               >
-                <Card className="h-full rounded-2xl border-2 hover:shadow-2xl hover:border-primary/50 transition-all bg-gradient-to-br from-card to-card/50">
+                <Card className="h-full rounded-2xl border border-border/60 hover:shadow-2xl hover:border-primary/30 transition-all duration-300 bg-gradient-to-br from-card to-card/50">
                   <CardContent className="p-6 space-y-4">
                     {/* Quote icon */}
                     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">

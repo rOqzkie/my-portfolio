@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import { motion, useScroll, useSpring } from 'motion/react';
+import { motion, useScroll, useSpring, AnimatePresence } from 'motion/react';
 
 export function Navbar() {
   const [isDark, setIsDark] = useState(false);
@@ -54,7 +54,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       {/* Scroll Progress Bar */}
       <motion.div
-        className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 dark:from-blue-400 dark:via-cyan-300 dark:to-blue-400 origin-left shadow-lg shadow-blue-500/50"
+        className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-500 via-emerald-400 to-cyan-500 dark:from-teal-400 dark:via-emerald-300 dark:to-cyan-400 origin-left shadow-lg shadow-teal-500/50"
         style={{ scaleX }}
       />
       
@@ -62,18 +62,18 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <button 
             onClick={() => scrollToSection('hero')}
-            className="text-xl font-semibold hover:opacity-80 transition-opacity"
+            className="text-lg sm:text-xl font-bold hover:opacity-80 transition-opacity tracking-tight"
           >
             Portfolio
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-1 lg:gap-2">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground px-3 py-2 rounded-lg hover:bg-accent/50 transition-all"
               >
                 {item.label}
               </button>
@@ -110,19 +110,32 @@ export function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-2">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors"
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-        )}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              className="md:hidden overflow-hidden"
+            >
+              <div className="py-3 space-y-1 border-t border-border/50">
+                {navItems.map((item, index) => (
+                  <motion.button
+                    key={item.id}
+                    initial={{ opacity: 0, x: -12 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 }}
+                    onClick={() => scrollToSection(item.id)}
+                    className="block w-full text-left px-4 py-2.5 text-muted-foreground hover:text-foreground hover:bg-accent/50 rounded-lg transition-colors text-sm"
+                  >
+                    {item.label}
+                  </motion.button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );

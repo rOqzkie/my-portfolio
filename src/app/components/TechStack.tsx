@@ -7,8 +7,8 @@ export function TechStack() {
     {
       title: 'Frontend',
       icon: Code,
-      color: 'text-blue-500',
-      bgColor: 'bg-blue-500/10',
+      color: 'text-teal-600',
+      bgColor: 'bg-teal-500/10',
       skills: [
         { name: 'React', level: 95 },
         { name: 'TypeScript', level: 90 },
@@ -19,8 +19,8 @@ export function TechStack() {
     {
       title: 'Backend',
       icon: Server,
-      color: 'text-cyan-500',
-      bgColor: 'bg-cyan-500/10',
+      color: 'text-emerald-500',
+      bgColor: 'bg-emerald-500/10',
       skills: [
         { name: 'PHP', level: 90 },
         { name: 'Node.js', level: 85 },
@@ -31,8 +31,8 @@ export function TechStack() {
     {
       title: 'Database',
       icon: Database,
-      color: 'text-sky-600',
-      bgColor: 'bg-sky-500/10',
+      color: 'text-cyan-600',
+      bgColor: 'bg-cyan-500/10',
       skills: [
         { name: 'MySQL', level: 90 },
         { name: 'PostgreSQL', level: 85 },
@@ -43,8 +43,8 @@ export function TechStack() {
     {
       title: 'Tools & Platforms',
       icon: Box,
-      color: 'text-indigo-500',
-      bgColor: 'bg-indigo-500/10',
+      color: 'text-blue-500',
+      bgColor: 'bg-blue-500/10',
       skills: [
         { name: 'Git', level: 90 },
         { name: 'Docker', level: 75 },
@@ -55,8 +55,8 @@ export function TechStack() {
     {
       title: 'Architecture',
       icon: Layout,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-600/10',
+      color: 'text-teal-700',
+      bgColor: 'bg-teal-600/10',
       skills: [
         { name: 'Microservices', level: 80 },
         { name: 'Clean Code', level: 90 },
@@ -67,8 +67,8 @@ export function TechStack() {
     {
       title: 'Version Control',
       icon: GitBranch,
-      color: 'text-cyan-600',
-      bgColor: 'bg-cyan-600/10',
+      color: 'text-green-600',
+      bgColor: 'bg-green-600/10',
       skills: [
         { name: 'Git', level: 95 },
         { name: 'GitHub', level: 90 },
@@ -79,22 +79,22 @@ export function TechStack() {
   ];
 
   return (
-    <section id="skills" className="py-20 sm:py-32">
+    <section id="skills" className="py-16 sm:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Technical Stack</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight">Technical Stack</h2>
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Comprehensive expertise across modern web development technologies and methodologies
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {techCategories.map((category, index) => (
             <motion.div
               key={category.title}
@@ -103,8 +103,8 @@ export function TechStack() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="h-full hover:shadow-lg transition-shadow rounded-2xl border-2">
-                <CardContent className="p-6 space-y-6">
+              <Card className="h-full hover:shadow-lg transition-all duration-300 rounded-2xl border border-border/60 hover:border-primary/30">
+                <CardContent className="p-4 sm:p-5 lg:p-6 space-y-5 sm:space-y-6">
                   <div className="flex items-center gap-3">
                     <div className={`w-12 h-12 rounded-xl ${category.bgColor} flex items-center justify-center`}>
                       <category.icon className={`h-6 w-6 ${category.color}`} />
@@ -125,10 +125,7 @@ export function TechStack() {
                             whileInView={{ width: `${skill.level}%` }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.2 }}
-                            className={`h-full rounded-full ${category.bgColor} ${category.color}`}
-                            style={{
-                              background: `linear-gradient(to right, currentColor, currentColor)`
-                            }}
+                            className="h-full rounded-full bg-gradient-to-r from-primary/80 to-primary"
                           />
                         </div>
                       </div>

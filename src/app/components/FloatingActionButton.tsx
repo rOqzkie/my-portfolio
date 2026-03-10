@@ -7,13 +7,13 @@ export function FloatingActionButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   const actions = [
-    { icon: Mail, label: 'Email', href: 'mailto:roqueday30@gmail.com', color: 'bg-blue-500 hover:bg-blue-600' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/roque-day-394338384', color: 'bg-sky-500 hover:bg-sky-600' },
+    { icon: Mail, label: 'Email', href: 'mailto:roqueday30@gmail.com', color: 'bg-teal-500 hover:bg-teal-600' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/roque-day-394338384', color: 'bg-emerald-500 hover:bg-emerald-600' },
     { icon: Github, label: 'GitHub', href: 'https://github.com/rOqzkie', color: 'bg-cyan-600 hover:bg-cyan-700' },
   ];
 
   return (
-    <div className="fixed bottom-8 right-8 z-40">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-40">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -46,7 +46,7 @@ export function FloatingActionButton() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 bg-primary text-primary-foreground rounded-full shadow-2xl flex items-center justify-center hover:shadow-primary/50 transition-shadow"
+        className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-primary text-primary-foreground rounded-full shadow-2xl flex items-center justify-center hover:shadow-primary/50 transition-shadow"
       >
         <AnimatePresence mode="wait">
           {isOpen ? (

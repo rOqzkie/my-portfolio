@@ -61,23 +61,23 @@ export function Teaching() {
   ];
 
   return (
-    <section id="teaching" className="py-20 sm:py-32">
+    <section id="teaching" className="py-16 sm:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Teaching & Academic Impact</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight">Teaching & Academic Impact</h2>
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Shaping the next generation of developers through practical, industry-focused education
           </p>
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-12 sm:mb-16">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -86,13 +86,13 @@ export function Teaching() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="text-center p-6 rounded-2xl border-2">
-                <CardContent className="p-0 space-y-2">
-                  <div className="w-12 h-12 mx-auto rounded-xl bg-primary/10 flex items-center justify-center">
-                    <stat.icon className="h-6 w-6 text-primary" />
+              <Card className="text-center p-4 sm:p-6 rounded-2xl border border-border/60">
+                <CardContent className="p-0 space-y-1.5 sm:space-y-2">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-xl bg-primary/10 flex items-center justify-center">
+                    <stat.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                   </div>
-                  <div className="text-3xl font-bold">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight">{stat.value}</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -100,7 +100,7 @@ export function Teaching() {
         </div>
 
         {/* Timeline */}
-        <div className="space-y-8">
+        <div className="space-y-4 sm:space-y-6 lg:space-y-8">
           {timeline.map((item, index) => (
             <motion.div
               key={item.year}
@@ -109,9 +109,9 @@ export function Teaching() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
             >
-              <Card className="rounded-2xl border-2 hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <div className="flex flex-col md:flex-row gap-6">
+              <Card className="rounded-2xl border border-border/60 hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+                <CardContent className="p-4 sm:p-6 lg:p-8">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                     {/* Timeline Marker */}
                     <div className="flex-shrink-0">
                       <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-xl font-semibold">
@@ -126,7 +126,7 @@ export function Teaching() {
                         <p className="text-muted-foreground">{item.institution}</p>
                       </div>
 
-                      <div className="grid md:grid-cols-2 gap-6">
+                      <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                         {/* Courses */}
                         <div className="space-y-2">
                           <h4 className="font-semibold text-sm">Courses Taught:</h4>

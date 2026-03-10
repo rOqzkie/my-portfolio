@@ -77,16 +77,16 @@ export function Contact() {
       label: 'Email',
       value: 'roqueday30@gmail.com',
       href: 'mailto:roqueday30@gmail.com',
-      color: 'text-blue-500',
-      bg: 'bg-blue-500/10',
+      color: 'text-teal-600',
+      bg: 'bg-teal-500/10',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'linkedin.com/in/roque-day-394338384',
       href: 'https://linkedin.com/in/roque-day-394338384',
-      color: 'text-sky-600',
-      bg: 'bg-sky-500/10',
+      color: 'text-emerald-600',
+      bg: 'bg-emerald-500/10',
     },
     {
       icon: Github,
@@ -94,27 +94,27 @@ export function Contact() {
       value: 'github.com/rOqzkie',
       href: 'https://github.com/rOqzkie',
       color: 'text-cyan-600',
-      bg: 'bg-cyan-500/10',
+      bg: 'bg-cyan-600/10',
     },
   ];
 
   return (
-    <section id="contact" className="py-20 sm:py-32">
+    <section id="contact" className="py-16 sm:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight">Get In Touch</h2>
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Available for freelance projects, and academic collaborations
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Contact Methods */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -122,7 +122,7 @@ export function Contact() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-xl font-bold mb-6">Contact Information</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6">Contact Information</h3>
             {contactMethods.map((method, index) => (
               <motion.a
                 key={method.label}
@@ -136,7 +136,7 @@ export function Contact() {
                 whileHover={{ scale: 1.02 }}
                 className="block"
               >
-                <Card className="rounded-2xl border-2 hover:shadow-lg hover:border-primary/50 transition-all">
+                <Card className="rounded-2xl border border-border/60 hover:shadow-lg hover:border-primary/30 transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className={`w-12 h-12 rounded-xl ${method.bg} flex items-center justify-center flex-shrink-0`}>
@@ -153,7 +153,7 @@ export function Contact() {
             ))}
 
             {/* Availability */}
-            <Card className="rounded-2xl border-2 bg-primary/5 border-primary/20">
+            <Card className="rounded-2xl border border-border/60 bg-primary/5 border-primary/20">
               <CardContent className="p-6">
                 <h4 className="font-bold mb-2">Availability</h4>
                 <p className="text-sm text-muted-foreground">
@@ -170,7 +170,7 @@ export function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <Card className="rounded-2xl border-2 relative overflow-hidden">
+            <Card className="rounded-2xl border border-border/60 relative overflow-hidden">
               {/* Success overlay */}
               {isSuccess && (
                 <motion.div
@@ -217,8 +217,8 @@ export function Contact() {
                 </motion.div>
               )}
 
-              <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
+              <CardContent className="p-5 sm:p-6 lg:p-8">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name *</Label>
